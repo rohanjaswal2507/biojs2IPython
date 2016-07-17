@@ -8,9 +8,6 @@ with open(os.path.join(os.path.split(__file__)[0], 'js/biojs-require.js'), 'r') 
     display(Javascript(data=f.read()))
 
 window = JSObject()
-#Javascript console for testing purposes
-console = window.console
-console.log('Hello from Python')
 
 #BaseClass to derive further classes as per the requirements of biojs components
 class BaseClass(object):
@@ -38,4 +35,4 @@ with open(os.path.join(os.path.split(__file__)[0], 'biojs-packages.json'), 'r') 
 for package in biojs_packages:
     print(package['package-name'])
     className = package['package-name']
-    globals()[className] = classFactory(className)
+    globals()[className] = classFactory(className, 'opts')
