@@ -1,0 +1,28 @@
+{
+  "name": "biojs2ipython",
+  "version": "1.0.0",
+  "description": "Utility to port biojs components to IPython and make them usable in Jupyter notebook",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanjaswal2507/biojs2IPython.git"
+  },
+  "keywords": [
+    "biojs2IPython",
+    "biojs",
+    "IPython",
+    "jupyter"
+  ],
+  "author": "Rohan Jaswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohanjaswal2507/biojs2IPython/issues"
+  },
+  "homepage": "https://github.com/rohanjaswal2507/biojs2IPython#readme"
+}
