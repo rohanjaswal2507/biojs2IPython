@@ -40,6 +40,24 @@ def buildForBrowser(package, rootDir):
         else:
             print(package + ' built successfully!')
 
+    elif os.path.exists(os.path.join(os.getcwd(), 'dist')):
+        try:
+            src = os.path.join(os.getcwd(), 'dist')
+            file_names = os.listdir(src)
+            dest = os.path.join(rootDir, 'biojs_extensions')
+            for name in file_names:
+                src_file = os.path.join(src, name)
+                dest_file = os.path.join(dest, name)
+                copyfile(src_file, dest_file)
+
+        except OSError:
+            print('There was some problem while copying '+ package +' module to nbextensions. Please make sure that Jupyter notebook is configured properly')
+        else:
+            print(package + ' built successfully!')
+
+    else:
+        print('Could not find the browser script for ' + package)
+
 
 def install_nbextension():
     os.system('jupyter nbextension install biojs_extensions --user')
