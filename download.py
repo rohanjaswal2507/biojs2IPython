@@ -29,6 +29,9 @@ def buildForBrowser(package, rootDir):
             '''
             src = os.path.join(os.getcwd(), 'build')
             file_names = os.listdir(src)
+            if not os.path.exists(os.path.join(rootDir, 'biojs_extensions')):
+                os.makedirs(os.path.join(rootDir, 'biojs_extensions'))
+
             dest = os.path.join(rootDir, 'biojs_extensions')
             for name in file_names:
                 src_file = os.path.join(src, name)
