@@ -5,7 +5,7 @@ Utility to port biojs components to IPython
 This repository makes the use of ipython-jsobject to expose javascript objects to IPython. So, ipython-jsobject should be installed first.
 To install ipython-jsobject:
 
-`pip install git clone https://github.com/rohanjaswal2507/ipython-jsobject.git`
+`pip install https://github.com/rohanjaswal2507/ipython-jsobject.git`
 
 Now, download the code to your localhost and install the python package.
 
